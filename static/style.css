@@ -1,0 +1,198 @@
+/* Navigation Bar */
+nav {
+    background-image: linear-gradient(to right top, #5d7599, #546f93, #4b6a8c, #416486, #385f7f, #355b7d, #32587b, #2f5479, #35507a, #3c4c7a, #454879, #4e4376);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4rem;
+    z-index: 1;
+    box-shadow: 0 0 0 5px #5d7599;
+    flex-wrap: flex;
+    padding: 0rem;
+    align-items: center;
+
+}
+.navbar-brand {
+    color: #f7f0c6;
+    transition: color 0.3s;
+}
+.navbar-brand:hover{
+    color: #5d7599;
+}
+ 
+.nav-link {
+    width: auto;
+    display: flex;
+    font-size: 1.4rem;
+    max-height: 100%;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.nav-item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #222;
+    font-size: 1.6rem;
+}
+
+.nav-item > a {
+    color: #f7f0c6;
+    transition: color 0.3s;
+    font-size: 1.4rem;
+    width: auto;
+    display: flex;
+}
+
+
+.nav-item > a:hover {
+color: #5d7599;
+}
+
+.navbar-toggler {
+opacity: 0.5;
+transition: box-shadow 0.15s;
+cursor: pointer;
+}
+
+.nav.collapse-expanded .navbar-toggler {
+opacity: 1;
+box-shadow: 0 0 0 3px #666;
+border-radius: 5px;
+}
+
+.nav-brand {
+transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+.navbar-toggler {
+    display: none;
+}
+
+.nav-link {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+}
+
+.nav-item {
+    border: 0;
+}
+}
+
+/* .nav-item{
+    padding: 0 2rem;
+}
+.nav-item> a{
+    color: #f7f0c6 ;
+    transition:color .3s;
+}
+.nav-item > a:hover{
+    color: #5d7599;
+}
+ ul li{
+    color: #f7f0c6;
+}  */
+/*Footer design and colours scheme */
+.footer {
+    background: rgb(0, 0, 0);
+    background-image: linear-gradient(to right top, #5d7599, #546f93, #4b6a8c, #416486, #385f7f, #355b7d, #32587b, #2f5479, #35507a, #3c4c7a, #454879, #4e4376);
+    color: #f7f0c6;
+    padding: 4rem 1rem;
+}
+
+.footer a {
+    color: #f7f0c6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/*On hover changes coour to grey*/
+.footer a:hover {
+    color: #5d7599;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.footer-main {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.col {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 auto;  
+}
+
+.footer-heading {
+    display: block;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+
+.address {
+    font-size: 20px;
+}
+
+.footer-link {
+    display: block;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+/*This gives a hover effect as you point to the website*/
+.footer-link :hover {
+    color: #5d7599;
+    transition: color 0.3s ease;
+    padding-left: 6px;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+}
+
+.social-icons {
+    font-size: 30px;
+    margin: 0 15px 15px 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.social-icons>a:hover {
+    color: #5d7599;
+    transition: color 0.3s ease;
+    padding-left: 6px;
+}
+
+/*SF Footer responsiveness on smaller devices such as Iphone, Galaxy and Ipad*/
+@media only screen and (max-width:768px) {
+    .container1 {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:810px) {
+    .container1 {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+}
