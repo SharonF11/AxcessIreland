@@ -2,6 +2,24 @@
 
 {% block content %}
 <body>
+    <!-- <section class="block container">
+        <header class="block__header">
+            <h2 class="block__heading">Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, tempore!
+            </p>
+        </header>
+    </section> -->
+    <section class="block block--dark block--skewed-right">
+        <div class="container grid grid--1x2">
+            <header class="block__header hero__content">
+            <h1 class="block__heading">Axcess Ireland</h1>
+            <p class="hero__tagline">
+                The Gateway to Working and Living in Ireland</p>
+            <a href="" class="btn btn--accent btn--stretched">Subscriptions</a>
+            </header>
+            <img class="hero__image"src="{{url_for('static', filename='govid.png')}}" alt="infogov">  
+        </div>   
+    </section>
     <div class="card mygov" style="padding:3rem">
         <div class="grid grid--1x2">
             <div>
