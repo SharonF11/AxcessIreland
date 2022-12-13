@@ -1,6 +1,6 @@
 /* Navigation Bar */
 nav {
-    background-image: linear-gradient(to right top, #5d7599, #546f93, #4b6a8c, #416486, #385f7f, #355b7d, #32587b, #2f5479, #35507a, #3c4c7a, #454879, #4e4376);
+    background-image: linear-gradient(to right top, #051937, #002455, #002e74, #113794, #2d3eb3);
     display: flex;
     justify-content: space-between;
     border-radius: 4rem;
@@ -101,7 +101,7 @@ transform: translateY(5px);
     margin-top: 0;
 }
 .block--dark{
-    background: #385f7f;
+    background: #051937;
     color: #f7f0c6;
 }
 .block--dark .block__heading{
@@ -118,18 +118,36 @@ transform: translateY(5px);
 .card{
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
 }
 .card__header, 
 .card__body{
     padding: 2rem 3rem;
-    border-radius: 7px;
 }
 .card--primary, .card__header{
-    background: #5d7599;
+    background: #0f3175;
     color: #f7f0c6;
 }
+.card--secondary .card__header {
+    background: #2607db;
+    color: #fff;
+  }
+  
+  .card--primary .badge--primary {
+    background: #126de4;
+  }
+  
 /*plans*/
-
+.block-plans .grid{
+    gap: 4rem;
+}
+.block-plans .cards{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.plan {
+    transition: transform 0.2s ease-out;
+  }
 .plan__name{
     color: #f7f0c6;
     margin: 0;
@@ -160,6 +178,31 @@ transform: translateY(5px);
     position: absolute;
     top: -6px;
     right: 5%;
+}
+.plan:hover {
+    transform: scale(1.05);
+}
+  
+.plan--popular:hover {
+    transform: scale(1.15);
+}
+  
+@media screen and (min-width: 1024px) {
+    .plan__name {
+      font-size: 1.4rem;
+    }
+  
+    .plan__price {
+      font-size: 5rem;
+    }
+  
+    .plan__billing-cycle {
+      font-size: 1.6rem;
+    }
+  
+    .plan__description {
+      font-size: 1.7rem;
+    }
 }
 .btn{
     border: 2px solid black;
@@ -195,7 +238,7 @@ transform: translateY(5px);
 }
 .footer {
     background: rgb(0, 0, 0);
-    background-image: linear-gradient(to right top, #5d7599, #546f93, #4b6a8c, #416486, #385f7f, #355b7d, #32587b, #2f5479, #35507a, #3c4c7a, #454879, #4e4376);
+    background-image: linear-gradient(to right top, #051937, #002455, #002e74, #113794, #2d3eb3);
     color: #f7f0c6;
     padding: 4rem 1rem;
 }

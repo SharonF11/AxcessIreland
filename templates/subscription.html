@@ -2,31 +2,65 @@
 
     {% block content %}
         <body >
-            <div class="card" style="width: 18rem;">
-                <div class="plan plan--popular">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry level</h3>
-                        <span class="plan__price">FREE</span><br>
-                        <span class="plan__description">FREE entry level</span>
-                    </header>
-                    <div class="card__body">
-                    <h5 class="card-title">FREE LEVEL</h5>
-                    <ul>
-                        <li class="list__item">AL information</li>
-                        <li class="list__item">AL Support Services</li>
-                        <li class="list__item">AL Goverment Lists</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline">Subscribe Now </a>
+            <section class="block container block-plans">
+                <div class="grid grid--1x3">
+                    <div class="plan">
+                        <div class="card" >
+                            <header class="card__header">
+                                <h3 class="plan__name">Senior Level</h3>
+                                <span class="plan__price">€25</span><br>
+                                <span class="plan__description">SENIOR LEVEL</span>
+                            </header>
+                            <div class="card__body">
+                                <h5 class="card-title">SENIOR LEVEL</h5>
+                                <ul>
+                                    <li class="list__item">AL Help Desk Advice </li>
+                                    <li class="list__item">AL Support Services</li>
+                                    <li class="list__item">AL Government Links</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline">Subscribe Now </a>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="card card--secondary">
+                        <div class="plan plan--popular">
+                            <header class="card__header">
+                                <h3 class="plan__name">Entry level</h3>
+                                <span class="plan__price">FREE</span><br>
+                                <span class="plan__description">FREE entry level</span>
+                            </header>
+                            <div class="card__body">
+                            <h5 class="card-title">FREE LEVEL</h5>
+                            <ul>
+                                <li class="list__item">AL information</li>
+                                <li class="list__item">AL Support Services</li>
+                                <li class="list__item">AL Goverment Lists</li>
+                            </ul>
+                            <a class="btn btn-outline" href="{{url_for('subscription')}}" >Subscribe Now </a>
+                            </div>
+                        </div> 
+                        
                     </div>
+                    <div class="plan">
+                        <div class="card" >
+                            <header class="card__header">
+                                <h3 class="plan__name">Executive Level</h3>
+                                <span class="plan__price">€50</span><br>
+                                <span class="plan__description">AXCESS ALL</span>
+                            </header>
+                            <div class="card__body">
+                                <h5 class="card-title">AXCESS AL</h5>
+                                <ul>
+                                    <li class="list__item">AL All levels</li>
+                                    <li class="list__item">AL Application levev</li>
+                                    <li class="list__item">AL All Links </li>
+                                </ul>
+                                <a href="#" class="btn btn-outline">Subscribe Now </a>
+                            </div>
+                        </div>
                 </div>
-            </div>
-            <!-- <div style="width:30%; padding: 3rem">
-                <div class="card card--primary">
-                    <header class="card__header">card title </header>
-                    <div class="card__body">
-                        Welcome totherhkajbhsckjgbfkg
-                    </div>
-                </div>
-            </div> -->
-        </body>
+            </section>
+          
+           
+            
     {% endblock %}
