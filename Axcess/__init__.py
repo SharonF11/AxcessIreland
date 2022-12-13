@@ -10,6 +10,7 @@ DB_NAME = "database.db"
 def create_Axcess_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'sharon'
+    app.config['DATABASE_URL'] = f'postgres://pnzhvbjcnbcfdq:7f1c445f4b219e80c445b06ab47bada35796f76e11967a44711d622e8a767c1a@ec2-52-48-159-67.eu-west-1.compute.amazonaws.com:5432/d59rdjp70ebudd'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     db.init_app(app)
 
